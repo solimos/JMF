@@ -1,0 +1,77 @@
+body {
+  font-family: Trebuchet MS;
+  font-size: 8px;
+  background-color: #062541;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 6em;
+}
+.flag {
+  text-align: center;
+  postion: relative;
+  width: 65%;
+}
+.check-box {
+  background-color: #062541;
+  height: 36.5em;
+  width: 36em;
+  padding: 0 0.5em 0 0;
+  position: absolute;
+}
+.check-box__check {
+  background-color: #f9e5c4;
+  height: 2em;
+  width: 2em;
+  position: relative;
+  z-index: 1;
+  transform: rotate(45deg);
+  float: left;
+  margin: 0 4em 1.5em 0;
+}
+.check-box__check:before {
+  content: "";
+  background-color: #062541;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2em;
+  width: 1em;
+  z-index: 2;
+}
+.check-box__check:after {
+  content: "";
+  background-color: #062541;
+  position: absolute;
+  height: 1.5em;
+  width: 1.5em;
+  z-index: 3;
+  left: 0;
+  top: 0;
+}
+.check-box__check:nth-child(7) {
+  margin-left: 2.5em;
+}
+.check-box__check:nth-child(18) {
+  margin-left: 2.5em;
+}
+.check-box__check:nth-child(29) {
+  margin-left: 2.5em;
+}
+.check-box__check:nth-child(40) {
+  margin-left: 2.5em;
+}
+.stripe-box {
+  background-color: #d04546;
+}
+.stripe-box__stripes {
+  color: $liberty;
+  font-size: 4em;
+  font-weight: bold;
+  padding: 0.05em 1em 0.05em 0;
+  text-align: right;
+}
+.stripe-box__stripes:nth-child(2n) {
+  background-color: #062541;
+  padding: 0.6em;
+}
